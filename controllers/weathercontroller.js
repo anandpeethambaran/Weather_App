@@ -1,7 +1,11 @@
 const request = require('postman-request');
 
 module.exports = {
-    geocode: () => {
+    viewIndex : (req,res)=>{
+
+    },
+
+    geocode: (req,res) => {
         const url1 = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + encodeURIComponent(address) + ".json?access_token=pk.eyJ1IjoiYW5hbmR0cCIsImEiOiJja2FhdDNqa3YwZm9iMnFwOWNrcmlqaHJiIn0.i84YbKCiqF8Az_wG7rCxEg&limit=1";
 
 
